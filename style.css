@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e242a;
+  font-family: "Oxygen", sans-serif;
+  overflow: hidden;
+}
+
+.class {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+.box1 {
+  width: 530px;
+  height: 625px;
+  background-image: url("https://res.cloudinary.com/davims6ce/image/upload/v1597557707/1_pblr2h.png");
+  position: absolute;
+  bottom: -100%;
+  left: 35%;
+  animation: anim 2s forwards, anim2 3s forwards 3s;
+}
+
+.box1::after {
+  content: "";
+  position: absolute;
+  width: 530px;
+  height: 625px;
+  background-image: url("https://res.cloudinary.com/davims6ce/image/upload/v1597557706/2_meanqt.png");
+  left: 0px;
+  z-index: -1;
+}
+
+@keyframes anim {
+  from {
+    bottom: -100%;
+  }
+
+  to {
+    bottom: 0%;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    left: 35%;
+    width: 530px;
+  }
+
+  to {
+    width: 0px;
+    left: 50%;
+  }
+}
+
+.box2 {
+  width: auto;
+  height: auto;
+  color: #fff;
+  font-size: 8em;
+  font-weight: 500;
+  line-height: 130px;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  overflow: hidden;
+}
+
+.text {
+  position: relative;
+  left: -700px;
+  animation: anim3 2s forwards 3s;
+}
+
+@keyframes anim3 {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 0%;
+  }
+}
+
+.box3 {
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  animation: anim4 2s forwards 2.5s;
+}
+
+.logo {
+  float: left;
+  margin: 20px 0 0 100px;
+}
+
+.menu {
+  font-size: 14px;
+  color: white;
+  letter-spacing: 2px;
+  margin-right: 150px;
+  margin-top: 20px;
+  float: right;
+}
+
+.menu ul {
+  list-style: none;
+}
+
+.menu ul li {
+  display: inline-block;
+  margin-left: 70px;
+}
+
+@keyframes anim4 {
+  from {
+    top: -100%;
+  }
+
+  to {
+    top: 0%;
+  }
+}
